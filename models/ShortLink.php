@@ -39,6 +39,8 @@ class ShortLink extends \yii\db\ActiveRecord
             [['original_url'], 'string', 'max' => 2000],
             [['short_code'], 'string', 'max' => 10],
             [['short_code'], 'unique'],
+
+            [['original_url'], 'url'],
         ];
     }
 
